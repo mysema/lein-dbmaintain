@@ -7,7 +7,7 @@
   [{:keys [dbmaintain]}]
   (let [{:keys [driver url user-name password schemas dialect]} dbmaintain]
     (doto (Properties.)
-      (.load (FileInputStream. (File. "sql/dbmaintain.properties")))
+      (.load (.getResourceAsStream (.getClass dbmaintain) "/dbmaintain.properties"))
       (.put "database.driverClassName" driver)
       (.put "database.url" url)
       (.put "database.userName" user-name)

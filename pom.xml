@@ -14,6 +14,12 @@
       <url>http://www.eclipse.org/legal/epl-v10.html</url>
     </license>
   </licenses>
+  <scm>
+    <connection>scm:git:git://github.com/mysema/lein-dbmaintain.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/mysema/lein-dbmaintain.git</developerConnection>
+    <tag>d41ab7505d02e8b45b620dfb8f5874841c031eaa</tag>
+    <url>https://github.com/mysema/lein-dbmaintain</url>
+  </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
