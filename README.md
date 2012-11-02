@@ -4,7 +4,7 @@ DbMaintain integration for Leiningen
 
 ## Configuration
 
-SQL files under sql/incremental
+Put your SQL files under sql/incremental
 
 Project configuration like this
 
@@ -15,7 +15,9 @@ Project configuration like this
                  :schemas "mydb"
                  :dialect "mysql"}
                
-Make sure that the needed JDBC drivers are also on the classpath.                 
+Make sure that the needed JDBC drivers are also on the classpath.         
+
+For more details see the DbMaintain project page http://dbmaintain.sourceforge.net/overview.html        
 
 ## Usage
 
