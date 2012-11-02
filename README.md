@@ -8,12 +8,12 @@ SQL files under sql/incremental
 
 Project configuration like this
 
-  :dbmaintain {:driver "com.mysql.jdbc.Driver"
-               :url "jdbc:mysql://localhost:3306/mydb"
-               :user-name "myuser"
-               :password "mypass"
-               :schemas "mydb"
-               :dialect "mysql"}
+    :dbmaintain {:driver "com.mysql.jdbc.Driver"
+                 :url "jdbc:mysql://localhost:3306/mydb"
+                 :user-name "myuser"
+                 :password "mypass"
+                 :schemas "mydb"
+                 :dialect "mysql"}
                
 Make sure that the needed JDBC drivers are also on the classpath.                 
 
