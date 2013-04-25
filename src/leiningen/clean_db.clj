@@ -1,10 +1,7 @@
 (ns leiningen.clean-db
-  (:use leiningen.dbmaintain)
-  (:import [org.dbmaintain.launch DbMaintain]))
+  (:use leiningen.dbmaintain))
 
-(defn clean-db
+(defn clean-db 
   [project & args] 
-  (let [props (get-properties project)
-        dbmaintain (DbMaintain. props)]
-    (.cleanDatabase dbmaintain)))
-    
+  (let [factory (get-mainfactory project)]
+    (.. factory createDBCleaner cleanDatabase)))

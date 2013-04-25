@@ -1,8 +1,8 @@
-(defproject lein-dbmaintain "0.1.0"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject lein-dbmaintain "0.1.1"
+  :description "dbMaintain integration for lein"
+  :url "https://github.com/mysema/lein-dbmaintain"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.3.0"]
-                 [org.dbmaintain/dbmaintain "1.1"]]
+  :dependencies [[org.clojure/clojure "1.5.0"]
+                 [org.dbmaintain/dbmaintain "2.4"]]
   :eval-in-leiningen true)

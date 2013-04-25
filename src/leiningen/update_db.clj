@@ -1,10 +1,8 @@
 (ns leiningen.update-db
-  (:use leiningen.dbmaintain)
-  (:import [org.dbmaintain.launch DbMaintain]))
+  (:use leiningen.dbmaintain))
 
-(defn update-db
+(defn update-db 
   [project & args] 
-  (let [props (get-properties project)
-        dbmaintain (DbMaintain. props)]
-    (.updateDatabase dbmaintain)))
+  (let [factory (get-mainfactory project)]
+    (.updateDatabase (.createDbMaintainer factory) false)))
     
