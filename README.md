@@ -9,7 +9,7 @@ Put your SQL files under sql/incremental
 Project configuration like this
 
 ```clojure
-:plugins [[lein-jelastic "0.1.0"]]
+:plugins [[lein-dbmaintain "0.1.1"]]
 
 :dbmaintain {:driver "com.mysql.jdbc.Driver"
              :url "jdbc:mysql://localhost:3306/mydb"
