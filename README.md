@@ -13,6 +13,7 @@ Project configuration like this
                  :user-name "myuser"
                  :password "mypass"
                  :schemas "mydb"
+                 :scripts "sql"
                  :dialect "mysql"}
                
 Make sure that the needed JDBC drivers are also on the classpath.         
