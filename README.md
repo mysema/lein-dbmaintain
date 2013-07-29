@@ -8,12 +8,17 @@ Put your SQL files under sql/incremental
 
 Project configuration like this
 
-    :dbmaintain {:driver "com.mysql.jdbc.Driver"
-                 :url "jdbc:mysql://localhost:3306/mydb"
-                 :user-name "myuser"
-                 :password "mypass"
-                 :schemas "mydb"
-                 :dialect "mysql"}
+```clojure
+:plugins [[lein-dbmaintain "0.1.1"]]
+
+:dbmaintain {:driver "com.mysql.jdbc.Driver"
+             :url "jdbc:mysql://localhost:3306/mydb"
+             :user-name "myuser"
+             :password "mypass"
+             :schemas "mydb"
+             :scripts "sql"
+             :dialect "mysql"}
+```
                
 Make sure that the needed JDBC drivers are also on the classpath.         
 
