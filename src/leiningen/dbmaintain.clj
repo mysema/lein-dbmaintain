@@ -9,6 +9,7 @@
     (doto (Properties.)
       (.load (.getResourceAsStream (.getClass dbmaintain) "/dbmaintain-default.properties"))
       (.put "dbMaintainer.script.locations" scripts)
+      (.put "dbMaintainer.autoCreateDbMaintainScriptsTable" "true")
       (.put "database.driverClassName" driver)
       (.put "database.url" url)
       (.put "database.userName" user-name)
@@ -19,5 +20,3 @@
 (defn get-mainfactory
   [project]
   (MainFactory. (get-properties project)))
-    
-        
