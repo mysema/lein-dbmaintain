@@ -26,10 +26,6 @@ For more details see the DbMaintain project page http://dbmaintain.sourceforge.n
 
 ## Usage
 
-    lein check-script-updates
-    
-Performs a dry run of the database update. May be used to verify if there are any updates or in a test that fails if it appears that an irregular script update was performed.    
-
     lein clean-db
     
 Task that removes the data of all database tables, except for the DBMAINTAIN_SCRIPTS table.
