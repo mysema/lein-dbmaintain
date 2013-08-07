@@ -1,4 +1,4 @@
-(defproject lein-dbmaintain "0.1.1"
+(defproject lein-dbmaintain "0.1.2"
   :description "dbMaintain integration for lein"
   :url "https://github.com/mysema/lein-dbmaintain"
   :license {:name "Eclipse Public License"
