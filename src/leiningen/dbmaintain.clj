@@ -10,6 +10,7 @@
       (.load (.getResourceAsStream (.getClass dbmaintain) "/dbmaintain-default.properties"))
       (.put "dbMaintainer.script.locations" scripts)
       (.put "dbMaintainer.autoCreateDbMaintainScriptsTable" "true")
+      (.put "dbMaintainer.script.encoding" "UTF-8")
       (.put "database.driverClassName" driver)
       (.put "database.url" url)
       (.put "database.userName" user-name)
